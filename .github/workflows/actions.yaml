@@ -2,6 +2,10 @@ name: My First GitHub Actions
 
 on: [push]
 
+env:
+  DOCKER_IMAGE: deepakrao2323/diabetes-demo   # Your DockerHub repo
+  DOCKER_TAG: v1                              # or latest, or dynamic
+  
 jobs:
   build:
     runs-on: ubuntu-latest
